@@ -36,6 +36,6 @@
     "hotswap",
     "rp2040",
     "arrows",
-    "pad"
+    "gamepad"
   ]
 }
