@@ -1,0 +1,41 @@
+{
+  "name": "travis-ergogen-pad-2026",
+  "version": "2026.07.03",
+  "description": "Travis's Ergogen Pad 2026",
+  "repository": "https://github.com/dieseltravis/travis-ergogen-pad-2026",
+  "author": "Travis Hardiman <dieseltravis@users.noreply.github.com>",
+  "license": "Hippocratic-3.0",
+  "dependencies": {
+    "ergogen": "^4.2.1"
+  },
+  "devDependencies": {
+    "dxf": "^5.1.0",
+    "yaml-lint": "^1.7.0"
+  },
+  "scripts": {
+    "test": "npx yamllint config.yaml",
+    "gen": "ergogen . -o output --debug",
+    "svg": "for f in output/outlines/*.dxf; do npx dxf-to-svg \"$f\"; done",
+    "3d": "for f in `ls ./output/cases/*.jscad | grep -v '/_'`; do npx @jscad/cli@1 \"$f\" -of stla; done",
+    "all": "yarn test && yarn gen && yarn 3d",
+    "qmk": "qmk lint -kb dieseltravis/travipad2026 && qmk clean && qmk compile -kb dieseltravis/travipad2026 -km default",
+    "qmk_via": "qmk lint -kb dieseltravis/travipad2026 && qmk clean && qmk compile -kb dieseltravis/travipad2026 -km via",
+    "qmk_config": "qmk config user.keyboard=dieseltravis/travipad2026 user.keymap=default",
+    "qmk_config2": "qmk config compile.keyboard=dieseltravis/travipad2026 compile.keymap=default",
+    "qmk_cp": "cp -v ~/qmk_firmware/dieseltravis_travipad2026*.uf2 ~/Projects/travis-ergogen-2026/firmware/",
+    "qmk_link": "ln -s ~/Projects/travis-ergogen-2026/firmware/qmk ~/qmk_firmware/keyboards/dieseltravis/travipad2026",
+    "qmk_all": "yarn qmk && yarn qmk_cp"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ergogen",
+    "keyboard",
+    "cherrymx",
+    "hotswap",
+    "rp2040",
+    "arrows",
+    "pad"
+  ]
+}
