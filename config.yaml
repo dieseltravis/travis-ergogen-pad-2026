@@ -195,10 +195,17 @@ pcbs:
         what: ImStuBTW/xiao_ble
         where:
           ref.aggregate.parts: [bottom_col1_row0, middle_col1_row0]
-          #shift: [2.5, -2.5]
-          shift: [6, -6]
+          shift: [6.1, -6.1]
           rotate: -135
         params:
+          P0: row0
+          P1: row1
+          P2: row2
+          P3: row3
+          P8: col0
+          P9: col1
+          P10: col2
+
       # keys
       mx_hotswap_key:
         what: travis/switch_mx
@@ -283,7 +290,7 @@ pcbs:
           ref.aggregate.parts: [middle_col1_row1, top_col0_row0]
         params:
           face: *cool_font
-          text: "made with ♥ in #ROC"
+          text: "#ROC"
           mirrored: true
           side: "B"
           height: 1.1
@@ -331,7 +338,7 @@ pcbs:
       pcbnumber:
         what: ceoloide/utility_text
         where:
-          ref: middle_col0_row0
+          ref: bottom_col0_row0
         adjust:
           shift: [0, kp/2 - 5]
         params:
