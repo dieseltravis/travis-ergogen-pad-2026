@@ -1,8 +1,8 @@
 meta:
   engine: 4.2.1
   name: &name "travis-ergogen-pad-2026"
-  version: &meta_version "2026.07.03"
-  date: "2026-07-03"
+  version: &meta_version "2026.07.09"
+  date: "2026-07-09"
   author: 'Travis Hardiman'
   url: &url https://github.com/dieseltravis/travis-ergogen-pad-2026
   tags: [ "ergogen", "keyboard", "cherrymx", "hotswap", "arrows", "gamepad" ]
@@ -148,8 +148,37 @@ outlines:
           shift: [bp, bp]
         - ref: top_col1_row0
           shift: [bp, -bp]
+        - ref: top_col1_row0
+          shift: [0, -bp]
+        - ref: middle_col1_row0
+          shift: [bp, 0]
+        - ref: middle_col1_row0
+          shift: [bp, -bp]
+
+        - ref: middle_col1_row0
+          shift: [-3, -2bp - 3]
+        - ref: middle_col1_row0
+          shift: [-4, -2bp - 4]
+        - ref: middle_col1_row0
+          shift: [-6, -2bp - 2]
+        - ref: middle_col1_row0
+          shift: [-8, -2bp]
+        - ref: middle_col1_row0
+          shift: [-11, -2bp + 3]
+        - ref: bottom_col1_row0
+          shift: [2bp - 3, 11]
+        - ref: bottom_col1_row0
+          shift: [2bp, 8]
+        - ref: bottom_col1_row0
+          shift: [2bp + 2, 6]
+        - ref: bottom_col1_row0
+          shift: [2bp + 4, 4]
+        - ref: bottom_col1_row0
+          shift: [2bp + 3, 3]
+
         - ref: bottom_col1_row0
           shift: [bp, -bp]
+
   combo:
     - name: board
     - operation: subtract
@@ -241,12 +270,12 @@ pcbs:
         what: travis/roc
         where:
           #ref: middle_col0_row0
-          ref.aggregate.parts: [middle_col0_row1, top_col0_row1]
+          ref.aggregate.parts: [middle_col1_row1, top_col0_row0]
         params:
           side: "B"
           scale: 0.15
         adjust:
-          shift: [0, kp]
+          shift: [-kp/2, kp/2]
       roclove:
         what: ceoloide/utility_text
         where:
@@ -265,30 +294,27 @@ pcbs:
       name:
         what: ceoloide/utility_text
         where:
-          #ref: middle_col0_row0
-          ref.aggregate.parts: [middle_col1_row0, top_col1_row0]
+          ref.aggregate.parts: [middle_col0_row0, middle_col1_row1]
         params:
           face: *cool_font
           text: *name
-          height: 2.5
-          width: 2.5
-          #align: "center"
+          height: 2.25
+          width: 2.25
           bold: true
         adjust:
-          rotate: 45
-          shift: [kp/2, -kp/2]
+          rotate: 0
+          shift: [0, 0]
       url:
         what: ceoloide/utility_text
         where:
-          ref.aggregate.parts: [middle_col1_row0, top_col1_row0]
+          ref.aggregate.parts: [middle_col0_row0, middle_col1_row1]
         params:
           text: *url
-          #align: "right"
           side: B
           mirrored: true
         adjust:
-          rotate: 45
-          shift: [kp/2, -kp/2]
+          rotate: 90
+          shift: [0, 0]
       version:
         what: ceoloide/utility_text
         where:
