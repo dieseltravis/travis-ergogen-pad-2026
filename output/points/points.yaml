@@ -1,0 +1,876 @@
+bottom_col0_row0:
+    x: 106.0660172
+    'y': -106.0660172
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col0_row0
+        name: bottom_col0_row0
+        tags:
+            - key
+        column_net: col0
+        row_net: row0
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: bottom
+        col:
+            key:
+                column_net: col0
+            rows:
+                row0:
+                    row_net: row0
+                row1:
+                    row_net: row1
+            name: col0
+        row: row0
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+bottom_col0_row1:
+    x: 120.9506149
+    'y': -91.1814194
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col0_row1
+        name: bottom_col0_row1
+        tags:
+            - key
+        column_net: col0
+        row_net: row1
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: bottom
+        col:
+            key:
+                column_net: col0
+            rows:
+                row0:
+                    row_net: row0
+                row1:
+                    row_net: row1
+            name: col0
+        row: row1
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+bottom_col1_row0:
+    x: 120.9506149
+    'y': -120.9506149
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col1_row0
+        name: bottom_col1_row0
+        tags:
+            - key
+        column_net: col0
+        row_net: row2
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: bottom
+        col:
+            key:
+                column_net: col0
+            rows:
+                row0:
+                    row_net: row2
+                row1:
+                    row_net: row3
+            name: col1
+        row: row0
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+bottom_col1_row1:
+    x: 135.8352127
+    'y': -106.0660172
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col1_row1
+        name: bottom_col1_row1
+        tags:
+            - key
+        column_net: col0
+        row_net: row3
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: bottom
+        col:
+            key:
+                column_net: col0
+            rows:
+                row0:
+                    row_net: row2
+                row1:
+                    row_net: row3
+            name: col1
+        row: row1
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+middle_col0_row0:
+    x: 165.6044082
+    'y': -106.0660172
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col0_row0
+        name: middle_col0_row0
+        tags:
+            - key
+        column_net: col1
+        row_net: row0
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: middle
+        col:
+            key:
+                column_net: col1
+            rows:
+                row0:
+                    row_net: row0
+                row1:
+                    row_net: row1
+            name: col0
+        row: row0
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+middle_col0_row1:
+    x: 180.4890059
+    'y': -91.1814194
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col0_row1
+        name: middle_col0_row1
+        tags:
+            - key
+        column_net: col1
+        row_net: row1
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: middle
+        col:
+            key:
+                column_net: col1
+            rows:
+                row0:
+                    row_net: row0
+                row1:
+                    row_net: row1
+            name: col0
+        row: row1
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+middle_col1_row0:
+    x: 180.4890059
+    'y': -120.9506149
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col1_row0
+        name: middle_col1_row0
+        tags:
+            - key
+        column_net: col1
+        row_net: row2
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: middle
+        col:
+            key:
+                column_net: col1
+            rows:
+                row0:
+                    row_net: row2
+                row1:
+                    row_net: row3
+            name: col1
+        row: row0
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+middle_col1_row1:
+    x: 195.3736036
+    'y': -106.0660172
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col1_row1
+        name: middle_col1_row1
+        tags:
+            - key
+        column_net: col1
+        row_net: row3
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: middle
+        col:
+            key:
+                column_net: col1
+            rows:
+                row0:
+                    row_net: row2
+                row1:
+                    row_net: row3
+            name: col1
+        row: row1
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+top_col0_row0:
+    x: 225.1427991
+    'y': -106.0660172
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col0_row0
+        name: top_col0_row0
+        tags:
+            - key
+        column_net: col2
+        row_net: row0
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: top
+        col:
+            key:
+                column_net: col2
+            rows:
+                row0:
+                    row_net: row0
+                row1:
+                    row_net: row1
+            name: col0
+        row: row0
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+top_col0_row1:
+    x: 240.0273969
+    'y': -91.1814194
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col0_row1
+        name: top_col0_row1
+        tags:
+            - key
+        column_net: col2
+        row_net: row1
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: top
+        col:
+            key:
+                column_net: col2
+            rows:
+                row0:
+                    row_net: row0
+                row1:
+                    row_net: row1
+            name: col0
+        row: row1
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+top_col1_row0:
+    x: 240.0273969
+    'y': -120.9506149
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col1_row0
+        name: top_col1_row0
+        tags:
+            - key
+        column_net: col2
+        row_net: row2
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: top
+        col:
+            key:
+                column_net: col2
+            rows:
+                row0:
+                    row_net: row2
+                row1:
+                    row_net: row3
+            name: col1
+        row: row0
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+top_col1_row1:
+    x: 254.9119946
+    'y': -106.0660172
+    r: -45
+    meta:
+        stagger: 0
+        spread: 21.05
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 18
+        height: 18
+        padding: 21.05
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: col1_row1
+        name: top_col1_row1
+        tags:
+            - key
+        column_net: col2
+        row_net: row3
+        zone:
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                    name: col0
+                col1:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+                    name: col1
+            rows:
+                row0: {}
+                row1: {}
+            name: top
+        col:
+            key:
+                column_net: col2
+            rows:
+                row0:
+                    row_net: row2
+                row1:
+                    row_net: row3
+            name: col1
+        row: row1
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10

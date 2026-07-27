@@ -1,0 +1,469 @@
+meta:
+    engine: 4.2.1
+    name: travis-ergogen-pad-2026
+    version: 2026.07.09
+    date: '2026-07-09'
+    author: Travis Hardiman
+    url: 'https://github.com/dieseltravis/travis-ergogen-pad-2026'
+    tags:
+        - ergogen
+        - keyboard
+        - cherrymx
+        - hotswap
+        - arrows
+        - gamepad
+    cool_font: 3270 Nerd Font
+units:
+    kp: U + 2
+    kspr: U + 1
+    bp: kp/2 + 3
+    screwSize: 1.5
+    standoffSize: 2.85
+    board: 1.6
+    height: 4
+    wall: 2
+    casethick: 1
+    platehole: 13.95
+    platethick: 1.41
+    platew: 1.2
+points:
+    rotate: -45
+    zones:
+        bottom:
+            anchor:
+                shift:
+                    - 150
+                    - 0
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                col1:
+                    key:
+                        column_net: col0
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+            rows:
+                row0: null
+                row1: null
+        middle:
+            anchor:
+                ref: bottom_col1_row1
+                shift: kp
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                col1:
+                    key:
+                        column_net: col1
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+            rows:
+                row0: null
+                row1: null
+        top:
+            anchor:
+                ref: middle_col1_row1
+                shift: kp
+            key:
+                padding: kp
+                spread: kp
+                tags:
+                    - key
+            columns:
+                col0:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row0
+                        row1:
+                            row_net: row1
+                col1:
+                    key:
+                        column_net: col2
+                    rows:
+                        row0:
+                            row_net: row2
+                        row1:
+                            row_net: row3
+            rows:
+                row0: null
+                row1: null
+outlines:
+    raw:
+        -
+            what: rectangle
+            where: true
+            size: kp
+    keys:
+        -
+            what: rectangle
+            where: true
+            size: U
+    board:
+        -
+            what: polygon
+            operation: stack
+            fillet: 5
+            points:
+                -
+                    ref: bottom_col0_row0
+                    shift:
+                        - '-bp'
+                        - '-bp'
+                -
+                    ref: bottom_col0_row1
+                    shift:
+                        - '-bp'
+                        - bp
+                -
+                    ref: bottom_col0_row1
+                    shift:
+                        - 0
+                        - bp
+                -
+                    ref: middle_col0_row1
+                    shift:
+                        - '-bp'
+                        - 0
+                -
+                    ref: middle_col0_row1
+                    shift:
+                        - '-bp'
+                        - bp
+                -
+                    ref: middle_col0_row1
+                    shift:
+                        - 0
+                        - bp
+                -
+                    ref: top_col0_row1
+                    shift:
+                        - '-bp'
+                        - 0
+                -
+                    ref: top_col0_row1
+                    shift:
+                        - '-bp'
+                        - bp
+                -
+                    ref: top_col1_row1
+                    shift:
+                        - bp
+                        - bp
+                -
+                    ref: top_col1_row0
+                    shift:
+                        - bp
+                        - '-bp'
+                -
+                    ref: top_col1_row0
+                    shift:
+                        - 0
+                        - '-bp'
+                -
+                    ref: middle_col1_row0
+                    shift:
+                        - bp
+                        - 0
+                -
+                    ref: middle_col1_row0
+                    shift:
+                        - bp
+                        - '-bp'
+                -
+                    ref: middle_col1_row0
+                    shift:
+                        - -3
+                        - '-2bp - 3'
+                -
+                    ref: middle_col1_row0
+                    shift:
+                        - -4
+                        - '-2bp - 4'
+                -
+                    ref: middle_col1_row0
+                    shift:
+                        - -6
+                        - '-2bp - 2'
+                -
+                    ref: middle_col1_row0
+                    shift:
+                        - -8
+                        - '-2bp'
+                -
+                    ref: middle_col1_row0
+                    shift:
+                        - -11
+                        - '-2bp + 3'
+                -
+                    ref: bottom_col1_row0
+                    shift:
+                        - 2bp - 3
+                        - 11
+                -
+                    ref: bottom_col1_row0
+                    shift:
+                        - 2bp
+                        - 8
+                -
+                    ref: bottom_col1_row0
+                    shift:
+                        - 2bp + 2
+                        - 6
+                -
+                    ref: bottom_col1_row0
+                    shift:
+                        - 2bp + 4
+                        - 4
+                -
+                    ref: bottom_col1_row0
+                    shift:
+                        - 2bp + 3
+                        - 3
+                -
+                    ref: bottom_col1_row0
+                    shift:
+                        - bp
+                        - '-bp'
+    combo:
+        -
+            name: board
+        -
+            operation: subtract
+            name: keys
+pcbs:
+    travipad2026:
+        template: kicad8
+        outlines:
+            main:
+                outline: board
+        footprints:
+            mcu:
+                what: travis/xiao-ble
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - bottom_col1_row0
+                                - middle_col1_row0
+                    shift:
+                        - 6.1
+                        - -6.1
+                    rotate: -135
+                params:
+                    P0: row0
+                    P1: row1
+                    P2: row2
+                    P3: row3
+                    P8: col0
+                    P9: col1
+                    P10: col2
+            mx_hotswap_key:
+                what: travis/switch_mx
+                where: meta.tags ~ /key/
+                params:
+                    include_corner_marks: true
+                    include_keycap: true
+                    from: '{{column_net}}'
+                    to: '{{name}}'
+                    value: C41430893
+                    hotswap_3dmodel_filename: >-
+                        ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Hotswap_MX.step
+                    hotswap_3dmodel_xyz_offset:
+                        - 0
+                        - 0
+                        - -1.9
+                    hotswap_3dmodel_xyz_rotation:
+                        - 180
+                        - 0
+                        - 0
+                adjust:
+                    rotate: 180
+            mx_col_via:
+                what: ceoloide/utility_router
+                where: meta.tags ~ /key/
+                params:
+                    net: '{{column_net}}'
+                    route: '(7.0, 2.5)v'
+            diode:
+                what: travis/DSMD_1206_3216Metric
+                where: meta.tags ~ /key/
+                params:
+                    side: B
+                    from: '{{name}}'
+                    to: '{{row_net}}'
+                    value: C7420318
+                    refpos:
+                        - -1.5
+                        - 2.75
+                        - 0
+                adjust:
+                    shift:
+                        - '-(U / 2 - 3.5)'
+                        - '-(U / 2 - 1)'
+                    rotate: 90
+            mx_diode_route:
+                what: ceoloide/utility_router
+                where: meta.tags ~ /key/
+                params:
+                    width: 0.254
+                    net: '{{row_net}}'
+                    route: 'b(-6.0, 5.1)(-6.0, 7.26)'
+            ergologo:
+                what: ceoloide/utility_ergogen_logo
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - bottom_col0_row1
+                                - middle_col0_row1
+                params:
+                    scale: 2
+                adjust:
+                    rotate: 45
+                    shift:
+                        - 0
+                        - 0
+            travis:
+                what: travis/travis
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - middle_col0_row1
+                                - top_col0_row1
+                params:
+                    scale: 3
+                adjust:
+                    rotate: 45
+                    shift:
+                        - 0
+                        - 0
+            roc:
+                what: travis/roc
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - middle_col1_row1
+                                - top_col0_row0
+                params:
+                    side: B
+                    scale: 0.15
+                adjust:
+                    shift:
+                        - '-kp/2'
+                        - kp/2
+            roclove:
+                what: ceoloide/utility_text
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - middle_col1_row1
+                                - top_col0_row0
+                params:
+                    face: 3270 Nerd Font
+                    text: '#ROC'
+                    mirrored: true
+                    side: B
+                    height: 1.1
+                    width: 1.1
+                adjust:
+                    rotate: 90
+                    shift:
+                        - 0
+                        - kp/2
+            name:
+                what: ceoloide/utility_text
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - middle_col0_row0
+                                - middle_col1_row1
+                params:
+                    face: 3270 Nerd Font
+                    text: travis-ergogen-pad-2026
+                    height: 2.25
+                    width: 2.25
+                    bold: true
+                adjust:
+                    rotate: 0
+                    shift:
+                        - 0
+                        - 0
+            url:
+                what: ceoloide/utility_text
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - middle_col0_row0
+                                - middle_col1_row1
+                params:
+                    text: 'https://github.com/dieseltravis/travis-ergogen-pad-2026'
+                    side: B
+                    mirrored: true
+                adjust:
+                    rotate: 90
+                    shift:
+                        - 0
+                        - 0
+            version:
+                what: ceoloide/utility_text
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - bottom_col1_row1
+                                - middle_col0_row0
+                params:
+                    face: 3270 Nerd Font
+                    text: 2026.07.09
+                    height: 1
+                    width: 1
+                adjust:
+                    rotate: 45
+                    shift:
+                        - kp/2 + 4
+                        - '-kp/2 - 4'
+            pcbnumber:
+                what: ceoloide/utility_text
+                where:
+                    ref: bottom_col0_row0
+                adjust:
+                    shift:
+                        - 0
+                        - kp/2 - 5
+                params:
+                    text: JLCJLCJLCJLC
