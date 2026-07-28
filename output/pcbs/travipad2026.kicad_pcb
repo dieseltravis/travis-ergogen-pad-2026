@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "travipad2026")
-    (date "2026-07-27")
+    (date "2026-07-28")
     (rev "2026.07.09")
     (company "Travis Hardiman")
   )
@@ -3819,21 +3819,6 @@
     (layer "F.SilkS" )
     (effects
       (font (face "3270 Nerd Font")
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-
-  (gr_text "JLCJLCJLCJLC"
-    (at 109.97278220000001 102.1592522 -45)
-    (layer "F.SilkS" )
-    (effects
-      (font 
         (size 1 1)
         (thickness 0.15)
         

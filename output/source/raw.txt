@@ -335,14 +335,14 @@ pcbs:
         adjust:
           rotate: 45
           shift: [kp/2 + 4, -kp/2 - 4]
-      pcbnumber:
-        what: ceoloide/utility_text
-        where:
-          ref: bottom_col0_row0
-        adjust:
-          shift: [0, kp/2 - 5]
-        params:
-          text: JLCJLCJLCJLC
+      # pcbnumber:
+      #   what: ceoloide/utility_text
+      #   where:
+      #     ref: bottom_col0_row0
+      #   adjust:
+      #     shift: [0, kp/2 - 5]
+      #   params:
+      #     text: JLCJLCJLCJLC
           #text: WayWayWay
           #side: B
           #mirrored: true
