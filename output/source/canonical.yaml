@@ -2,7 +2,7 @@ meta:
     engine: 4.2.1
     name: travis-ergogen-pad-2026
     version: 2026.08.02
-    date: '2026-08-02'
+    date: '2026-07-09'
     author: Travis Hardiman
     url: 'https://github.com/dieseltravis/travis-ergogen-pad-2026'
     tags:
@@ -45,17 +45,17 @@ points:
                         column_net: col0
                     rows:
                         row0:
-                            row_net: row0
-                        row1:
                             row_net: row1
+                        row1:
+                            row_net: row3
                 col1:
                     key:
                         column_net: col0
                     rows:
                         row0:
-                            row_net: row2
+                            row_net: row0
                         row1:
-                            row_net: row3
+                            row_net: row2
             rows:
                 row0: null
                 row1: null
@@ -74,17 +74,17 @@ points:
                         column_net: col1
                     rows:
                         row0:
-                            row_net: row0
-                        row1:
                             row_net: row1
+                        row1:
+                            row_net: row3
                 col1:
                     key:
                         column_net: col1
                     rows:
                         row0:
-                            row_net: row2
+                            row_net: row0
                         row1:
-                            row_net: row3
+                            row_net: row2
             rows:
                 row0: null
                 row1: null
@@ -103,17 +103,17 @@ points:
                         column_net: col2
                     rows:
                         row0:
-                            row_net: row0
-                        row1:
                             row_net: row1
+                        row1:
+                            row_net: row3
                 col1:
                     key:
                         column_net: col2
                     rows:
                         row0:
-                            row_net: row2
+                            row_net: row0
                         row1:
-                            row_net: row3
+                            row_net: row2
             rows:
                 row0: null
                 row1: null
@@ -237,56 +237,6 @@ outlines:
                     shift:
                         - bp
                         - '-bp'
-                -
-                    ref: middle_col1_row0
-                    shift:
-                        - -3
-                        - '-2bp - 3'
-                -
-                    ref: middle_col1_row0
-                    shift:
-                        - -4
-                        - '-2bp - 4'
-                -
-                    ref: middle_col1_row0
-                    shift:
-                        - -6
-                        - '-2bp - 2'
-                -
-                    ref: middle_col1_row0
-                    shift:
-                        - -8
-                        - '-2bp'
-                -
-                    ref: middle_col1_row0
-                    shift:
-                        - -11
-                        - '-2bp + 3'
-                -
-                    ref: bottom_col1_row0
-                    shift:
-                        - 2bp - 3
-                        - 11
-                -
-                    ref: bottom_col1_row0
-                    shift:
-                        - 2bp
-                        - 8
-                -
-                    ref: bottom_col1_row0
-                    shift:
-                        - 2bp + 2
-                        - 6
-                -
-                    ref: bottom_col1_row0
-                    shift:
-                        - 2bp + 4
-                        - 4
-                -
-                    ref: bottom_col1_row0
-                    shift:
-                        - 2bp + 3
-                        - 3
                 -
                     ref: bottom_col1_row0
                     shift:

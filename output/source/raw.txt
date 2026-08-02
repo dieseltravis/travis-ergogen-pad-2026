@@ -2,7 +2,7 @@ meta:
   engine: 4.2.1
   name: &name "travis-ergogen-pad-2026"
   version: &meta_version "2026.08.02"
-  date: "2026-08-02"
+  date: "2026-07-09"
   author: 'Travis Hardiman'
   url: &url https://github.com/dieseltravis/travis-ergogen-pad-2026
   tags: [ "ergogen", "keyboard", "cherrymx", "hotswap", "arrows", "gamepad" ]
@@ -30,29 +30,29 @@ points:
       anchor:
         # move the PCB into view for KiCad
         shift: [150, 0]
-      key:
+      key: &key
         padding: kp
         spread: kp
         tags:
           - key
-      columns:
+      columns: &cols
         col0:
+          key:
+            column_net: col0
+          rows:
+            row0:
+              row_net: row1
+            row1:
+              row_net: row3
+        col1:
           key:
             column_net: col0
           rows:
             row0:
               row_net: row0
             row1:
-              row_net: row1
-        col1:
-          key:
-            column_net: col0
-          rows:
-            row0:
               row_net: row2
-            row1:
-              row_net: row3
-      rows:
+      rows: &rows
         row0:
         row1:
     middle:
@@ -60,59 +60,25 @@ points:
         ref: bottom_col1_row1
         shift: kp
       key:
-        padding: kp
-        spread: kp
-        tags:
-          - key
+        <<: *key
       columns:
-        col0:
-          key:
-            column_net: col1
-          rows:
-            row0:
-              row_net: row0
-            row1:
-              row_net: row1
-        col1:
-          key:
-            column_net: col1
-          rows:
-            row0:
-              row_net: row2
-            row1:
-              row_net: row3
+        <<: *cols
+        col0.key.column_net: col1
+        col1.key.column_net: col1
       rows:
-        row0:
-        row1:
+        <<: *rows
     top:
       anchor:
         ref: middle_col1_row1
         shift: kp
       key:
-        padding: kp
-        spread: kp
-        tags:
-          - key
+        <<: *key
       columns:
-        col0:
-          key:
-            column_net: col2
-          rows:
-            row0:
-              row_net: row0
-            row1:
-              row_net: row1
-        col1:
-          key:
-            column_net: col2
-          rows:
-            row0:
-              row_net: row2
-            row1:
-              row_net: row3
+        <<: *cols
+        col0.key.column_net: col2
+        col1.key.column_net: col2
       rows:
-        row0:
-        row1:
+        <<: *rows
 outlines:
   raw:
     - what: rectangle
@@ -173,26 +139,26 @@ outlines:
         - ref: middle_col1_row0
           shift: [bp, -bp]
 
-        - ref: middle_col1_row0
-          shift: [-3, -2bp - 3]
-        - ref: middle_col1_row0
-          shift: [-4, -2bp - 4]
-        - ref: middle_col1_row0
-          shift: [-6, -2bp - 2]
-        - ref: middle_col1_row0
-          shift: [-8, -2bp]
-        - ref: middle_col1_row0
-          shift: [-11, -2bp + 3]
-        - ref: bottom_col1_row0
-          shift: [2bp - 3, 11]
-        - ref: bottom_col1_row0
-          shift: [2bp, 8]
-        - ref: bottom_col1_row0
-          shift: [2bp + 2, 6]
-        - ref: bottom_col1_row0
-          shift: [2bp + 4, 4]
-        - ref: bottom_col1_row0
-          shift: [2bp + 3, 3]
+        # - ref: middle_col1_row0
+        #   shift: [-3, -2bp - 3]
+        # - ref: middle_col1_row0
+        #   shift: [-4, -2bp - 4]
+        # - ref: middle_col1_row0
+        #   shift: [-6, -2bp - 2]
+        # - ref: middle_col1_row0
+        #   shift: [-8, -2bp]
+        # - ref: middle_col1_row0
+        #   shift: [-11, -2bp + 3]
+        # - ref: bottom_col1_row0
+        #   shift: [2bp - 3, 11]
+        # - ref: bottom_col1_row0
+        #   shift: [2bp, 8]
+        # - ref: bottom_col1_row0
+        #   shift: [2bp + 2, 6]
+        # - ref: bottom_col1_row0
+        #   shift: [2bp + 4, 4]
+        # - ref: bottom_col1_row0
+        #   shift: [2bp + 3, 3]
 
         - ref: bottom_col1_row0
           shift: [bp, -bp]
