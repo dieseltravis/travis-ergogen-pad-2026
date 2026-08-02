@@ -1,8 +1,8 @@
 meta:
   engine: 4.2.1
   name: &name "travis-ergogen-pad-2026"
-  version: &meta_version "2026.07.09"
-  date: "2026-07-09"
+  version: &meta_version "2026.08.02"
+  date: "2026-08-02"
   author: 'Travis Hardiman'
   url: &url https://github.com/dieseltravis/travis-ergogen-pad-2026
   tags: [ "ergogen", "keyboard", "cherrymx", "hotswap", "arrows", "gamepad" ]
@@ -122,6 +122,24 @@ outlines:
     - what: rectangle
       where: true
       size: U
+  _mounting:
+    - what: circle
+      radius: screwSize
+      where: &holeLeft
+        ref.aggregate.parts: [bottom_col0_row0, bottom_col1_row1]
+    - what: circle
+      radius: screwSize
+      where: &holeRight
+        ref.aggregate.parts: [top_col0_row0, top_col1_row1]
+  _standoff:
+    - what: circle
+      radius: standoffSize
+      where:
+        <<: *holeLeft
+    - what: circle
+      radius: standoffSize
+      where:
+        <<: *holeRight
   board:
     - what: polygon
       operation: stack
@@ -183,6 +201,8 @@ outlines:
     - name: board
     - operation: subtract
       name: keys
+    - operation: subtract
+      name: _mounting
 pcbs:
   travipad2026:
     template: kicad8
@@ -347,3 +367,16 @@ pcbs:
           #side: B
           #mirrored: true
           #reversible: true
+      # holes:
+      holeLeft:
+        what: travis/mountinghole
+        where:
+          <<: *holeLeft
+        params:
+          pad: 1
+      holeRight:
+        what: travis/mountinghole
+        where:
+          <<: *holeRight
+        params:
+          pad: 2

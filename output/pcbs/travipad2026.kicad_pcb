@@ -11,8 +11,8 @@
   (paper "A3")
   (title_block
     (title "travipad2026")
-    (date "2026-07-28")
-    (rev "2026.07.09")
+    (date "2026-08-02")
+    (rev "2026.08.02")
     (company "Travis Hardiman")
   )
 
@@ -3814,7 +3814,7 @@
   )
       
 
-  (gr_text "2026.07.09"
+  (gr_text "2026.08.02"
     (at 150.71981045 126.6074692 0)
     (layer "F.SilkS" )
     (effects
@@ -3828,6 +3828,44 @@
     )
   )
       
+
+    (module "travis:MountingHole_2.2mm_M2_Pad_Via" (layer "F.Cu")
+      (at 120.95061495 106.0660172 -45) 
+    
+      (fp_text reference "HOLE1" (at 0 -3.2) (layer "F.SilkS") hide 
+        (effects (font (size 1 1) (thickness 0.15)))
+      )
+    
+      (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+      (pad "1" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "1" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))
+      (pad "1" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "1" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "1" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "1" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "1" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "1" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "1" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+    )
+
+    (module "travis:MountingHole_2.2mm_M2_Pad_Via" (layer "F.Cu")
+      (at 240.02739685 106.0660172 -45) 
+    
+      (fp_text reference "HOLE2" (at 0 -3.2) (layer "F.SilkS") hide 
+        (effects (font (size 1 1) (thickness 0.15)))
+      )
+    
+      (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+      (pad "2" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "2" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))
+      (pad "2" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "2" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "2" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "2" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "2" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "2" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+      (pad "2" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask))
+    )
   (gr_line (start 119.48614879999997 138.61338719999998) (end 90.47431269480249 109.60155109480249) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 90.4743126948025 102.5304832948025) (end 117.41508100519752 75.5897149051975) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 124.48614880519752 75.5897149051975) (end 129.04976800000006 80.15333410000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

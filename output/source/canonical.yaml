@@ -1,8 +1,8 @@
 meta:
     engine: 4.2.1
     name: travis-ergogen-pad-2026
-    version: 2026.07.09
-    date: '2026-07-09'
+    version: 2026.08.02
+    date: '2026-08-02'
     author: Travis Hardiman
     url: 'https://github.com/dieseltravis/travis-ergogen-pad-2026'
     tags:
@@ -128,6 +128,44 @@ outlines:
             what: rectangle
             where: true
             size: U
+    _mounting:
+        -
+            what: circle
+            radius: screwSize
+            where:
+                ref:
+                    aggregate:
+                        parts:
+                            - bottom_col0_row0
+                            - bottom_col1_row1
+        -
+            what: circle
+            radius: screwSize
+            where:
+                ref:
+                    aggregate:
+                        parts:
+                            - top_col0_row0
+                            - top_col1_row1
+    _standoff:
+        -
+            what: circle
+            radius: standoffSize
+            where:
+                ref:
+                    aggregate:
+                        parts:
+                            - bottom_col0_row0
+                            - bottom_col1_row1
+        -
+            what: circle
+            radius: standoffSize
+            where:
+                ref:
+                    aggregate:
+                        parts:
+                            - top_col0_row0
+                            - top_col1_row1
     board:
         -
             what: polygon
@@ -260,6 +298,9 @@ outlines:
         -
             operation: subtract
             name: keys
+        -
+            operation: subtract
+            name: _mounting
 pcbs:
     travipad2026:
         template: kicad8
@@ -449,7 +490,7 @@ pcbs:
                                 - middle_col0_row0
                 params:
                     face: 3270 Nerd Font
-                    text: 2026.07.09
+                    text: 2026.08.02
                     height: 1
                     width: 1
                 adjust:
@@ -457,3 +498,23 @@ pcbs:
                     shift:
                         - kp/2 + 4
                         - '-kp/2 - 4'
+            holeLeft:
+                what: travis/mountinghole
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - bottom_col0_row0
+                                - bottom_col1_row1
+                params:
+                    pad: 1
+            holeRight:
+                what: travis/mountinghole
+                where:
+                    ref:
+                        aggregate:
+                            parts:
+                                - top_col0_row0
+                                - top_col1_row1
+                params:
+                    pad: 2
