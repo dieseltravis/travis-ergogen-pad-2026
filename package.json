@@ -1,6 +1,6 @@
 {
   "name": "travis-ergogen-pad-2026",
-  "version": "2026.07.03",
+  "version": "2026.08.02",
   "description": "Travis's Ergogen Pad 2026",
   "repository": "https://github.com/dieseltravis/travis-ergogen-pad-2026",
   "author": "Travis Hardiman <dieseltravis@users.noreply.github.com>",
@@ -27,7 +27,7 @@
     "qmk_all": "yarn qmk && yarn qmk_cp"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   },
   "keywords": [
     "ergogen",

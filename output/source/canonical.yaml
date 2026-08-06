@@ -371,6 +371,7 @@ pcbs:
                     side: B
                     scale: 0.15
                 adjust:
+                    rotate: 45
                     shift:
                         - '-kp/2'
                         - kp/2
@@ -468,3 +469,43 @@ pcbs:
                                 - top_col1_row1
                 params:
                     pad: 2
+            background:
+                what: ceoloide/utility_filled_zone
+                params:
+                    side: B
+                    name: back ground
+                    connect_pads: 'yes'
+                    points:
+                        -
+                            - 15
+                            - 45
+                        -
+                            - 305
+                            - 45
+                        -
+                            - 305
+                            - 230
+                        -
+                            - 15
+                            - 230
+            foreground:
+                what: ceoloide/utility_filled_zone
+                params:
+                    side: F
+                    name: fore ground
+                    connect_pads: 'yes'
+                    fill_type: hatch
+                    hatch_orientation: 45
+                    points:
+                        -
+                            - 20
+                            - 50
+                        -
+                            - 310
+                            - 50
+                        -
+                            - 310
+                            - 235
+                        -
+                            - 20
+                            - 235
